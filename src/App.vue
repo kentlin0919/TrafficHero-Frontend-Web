@@ -5,16 +5,16 @@ import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  <header class="sticky-top">
+  <header-component class="sticky-top">
     <navbar></navbar>
-  </header>
-  <main>
+  </header-component>
+  <main-component>
     <RouterView></RouterView>
-  </main>
+  </main-component>
 </template>
 
 <style scoped>
-header {
+header-component {
   line-height: 1.5;
   max-height: 100vh;
   width: 100%;
@@ -25,7 +25,7 @@ header {
   left: 0%;
 }
 
-main {
+main-component {
   right: 0%;
   left: 0%;
 }

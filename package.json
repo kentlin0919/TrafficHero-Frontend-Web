@@ -12,9 +12,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.0-alpha3",
+    "leaflet": "^1.9.3",
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue3-leaflet": "^1.0.46"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",

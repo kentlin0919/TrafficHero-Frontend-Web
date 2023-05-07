@@ -1,7 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue';
+
+
 </script>
 
 <template>
@@ -26,7 +27,16 @@ header-component {
 }
 
 main-component {
+  position: fixed;
+  top: 65px;
   right: 0%;
   left: 0%;
+}
+RouterView{
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  display: flex;
+
 }
 </style>

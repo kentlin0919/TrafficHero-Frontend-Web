@@ -14,5 +14,5 @@ app.use(router)
 
 app.mount('#app')
 
-import 'leaflet/dist/leaflet.css';
+
 import 'bootstrap/dist/js/bootstrap.js'

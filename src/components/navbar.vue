@@ -11,7 +11,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li>
           <RouterLink class="nav-link active" aria-current="page" to="/"> Home</RouterLink>
         </li>
@@ -19,7 +19,7 @@
           <RouterLink class="nav-link active" aria-current="page" to="/about"> about</RouterLink>
         </li>
         <li>
-          <RouterLink class="nav-link active " aria-current="page" to="/new"> new</RouterLink>
+          <RouterLink class="nav-link active" aria-current="page" to="/new"> new</RouterLink>
         </li>
         
       </ul>

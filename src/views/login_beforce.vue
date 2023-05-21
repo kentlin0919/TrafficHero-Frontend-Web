@@ -42,7 +42,7 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
     </header-component>
     <main-component>
-      <router-view/>
+      <h1>你登錄失敗喔～123，再來一次</h1>
     </main-component>
   </div>
 </template>

@@ -25,10 +25,10 @@ import { RouterLink, RouterView } from 'vue-router'
           <RouterLink class="nav-link active" aria-current="page" to="/about"> 統計圖表</RouterLink>
         </li>
         <li>
-          <RouterLink class="nav-link active" aria-current="page" to="/new"> 下載專區</RouterLink>
+          <RouterLink class="nav-link active" aria-current="page" to="/new"> 新增CMS</RouterLink>
         </li>
         <li>
-          <RouterLink class="nav-link active" aria-current="page" to="/login"> 登錄</RouterLink>
+          <RouterLink class="nav-link active" aria-current="page" to="/login"> 登出</RouterLink>
         </li>
         
       </ul>
@@ -42,7 +42,7 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
     </header-component>
     <main-component>
-      <router-view/>
+      <h1>登錄成功囉～</h1>
     </main-component>
   </div>
 </template>

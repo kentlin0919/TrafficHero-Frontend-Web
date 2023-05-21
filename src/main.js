@@ -6,7 +6,8 @@ import router from './router'
 
 import './assets/main.css'
 import 'bootstrap/dist/css/bootstrap.css'
-
+import dotenv from 'dotenv';
+// dotenv.config();
 const app = createApp(App)
 
 app.use(createPinia())

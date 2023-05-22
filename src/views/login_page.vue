@@ -56,6 +56,7 @@ export default {
     }
   },
   methods: {
+    //google sso
     handleGoogleAuthCodeLogin(response) {
       googleAuthCodeLogin({
     clientId: GOOGLE_CLIENT_ID

@@ -4,10 +4,7 @@
             <div class="color">
                 <nav class="navbar bg-primary navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                     <div class="container-fluid" data-bs-theme="blue">
-                        <img src="../assets/logo2.png" alt="Italian Trulli" class="navbar-brand">
-
-
-
+                        <img src="../assets/p1.png" alt="Italian Trulli" class="navbar-brand">
                     </div>
                 </nav>
             </div>
@@ -28,13 +25,13 @@
                 <div class="vv">
                     <button @click="register" class="button1" type="button">註冊</button>
                 </div>
-                <MDBInput label="Form control lg" size="lg" />
+                <!-- <MDBInput label="Form control lg" size="lg" />
                 <MDBInput label="Form control default" />
                 <MDBInput label="Form control sm" size="sm" />
-                <MDBInput label="Example label" v-model="input1" />
+                <MDBInput label="Example label" v-model="input1" /> -->
                 <p></p>
 
-                <MDBInput label="Form control lg" size="lg" />
+                <!-- <MDBInput label="Form control lg" size="lg" /> -->
             </div>
         </main>
     </div>
@@ -49,7 +46,7 @@ import.meta.env
 export default {
     components: {
         MDBBtn,
-        
+        MDBInput
     },
     data() {
         return {

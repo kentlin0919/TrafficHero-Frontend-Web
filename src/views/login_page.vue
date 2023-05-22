@@ -42,10 +42,11 @@ import { ref } from 'vue'
 import { googleAuthCodeLogin } from 'vue3-google-login'
 import { MDBBtn, MDBInput } from 'mdb-vue-ui-kit'
 import axios from 'axios'
+import.meta.env
 
 
 
-const GOOGLE_CLIENT_ID = '130370070421-eiu49norj8h9kbsqmruc99ooeqq01974.apps.googleusercontent.com'
+const GOOGLE_CLIENT_ID = 'clinet id'
 
 export default {
   components: {
@@ -107,6 +108,8 @@ export default {
     },
 
     login() {
+      const apiUrl = import.meta.env.VITE_Backend_API;
+      console.log(apiUrl)
       // 创建包含登录数据的对象
       const body = {
         "email": this.acc,
@@ -114,10 +117,10 @@ export default {
       };
 
       // 打印登录数据到控制台
-      console.log(JSON.stringify(body));
+      // console.log(JSON.stringify(body));
 
       // 发送登录请求到后端
-      axios.post('https://eddie.tw:8000/login', JSON.stringify(body), {
+      axios.post(apiUrl +'/login', JSON.stringify(body), {
         // axios.post(apiKey+'/login', JSON.stringify(body), {
         headers: {
           'Content-Type': 'application/json'

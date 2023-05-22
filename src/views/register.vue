@@ -44,6 +44,7 @@
 import { ref } from 'vue'
 import { MDBBtn, MDBInput } from 'mdb-vue-ui-kit'
 import axios from 'axios'
+import.meta.env
 
 export default {
     components: {
@@ -59,6 +60,7 @@ export default {
     },
     methods: {
         register() {
+            const apiUrl = import.meta.env.VITE_Backend_API;
             // 处理登录按钮点击事件的逻辑
             const regData = {
                 name: this.name,
@@ -66,7 +68,7 @@ export default {
                 password: this.password
             };
             console.log(regData);
-            axios.post('https://eddie.tw:8000/register', JSON.stringify(regData), {
+            axios.post(apiUrl+'/register', JSON.stringify(regData), {
                 headers: {
                     'Content-Type': 'application/json'
                 }

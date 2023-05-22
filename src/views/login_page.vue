@@ -29,25 +29,17 @@
         <GoogleLogin :clientId="GOOGLE_CLIENT_ID" :callback="handleGoogleAuthCodeLogin" popup-type="popup">
           <button type="button" class="btn btn-primary" @click="handleGoogleAuthCodeLogin">Google</button>
         </GoogleLogin>
-
-
       </table>
-
     </main>
   </div>
 </template>
-  
 <script>
 import { ref } from 'vue'
 import { googleAuthCodeLogin } from 'vue3-google-login'
 import { MDBBtn, MDBInput } from 'mdb-vue-ui-kit'
 import axios from 'axios'
 import.meta.env
-
-
-
 const GOOGLE_CLIENT_ID = 'clinet id'
-
 export default {
   components: {
     MDBBtn,
@@ -69,16 +61,14 @@ export default {
       }).then((response) => {
         console.log(response)
         this.sendAuthCodeToBackend(response)
-
       })
-
     },
-
     sendAuthCodeToBackend(authCode) {
 
+      const apiUrl = import.meta.env.VITE_Backend_API;
       // const data = { auth_code: authCode };
       console.log(JSON.stringify(authCode))
-      axios.post('http://114.34.89.252:8000' + '/googlelogin', authCode, {
+      axios.post(apiUrl + '/googlelogin', authCode, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -90,16 +80,6 @@ export default {
         .catch(error => {
           // 后端验证失败，处理登录失败逻辑
         });
-      //     const data = { auth_code: authCode };
-      // axios
-      //   .post('http://lin.kent0919.com:8000/googlelogin', data)
-      //   .then(response => {
-      //     // 後端驗證成功，可以進行後續處理
-      //     this.$router.push('/login_after');
-      //   })
-      //   .catch(error => {
-      //     // 後端驗證失敗，處理登入失敗邏輯
-      //   });
 
     },
 
@@ -115,12 +95,8 @@ export default {
         "email": this.acc,
         "password": this.password
       };
-
-      // 打印登录数据到控制台
-      // console.log(JSON.stringify(body));
-
       // 发送登录请求到后端
-      axios.post(apiUrl +'/login', JSON.stringify(body), {
+      axios.post(apiUrl + '/login', JSON.stringify(body), {
         // axios.post(apiKey+'/login', JSON.stringify(body), {
         headers: {
           'Content-Type': 'application/json'
@@ -143,12 +119,10 @@ export default {
           this.$router.push('/login_beforce');
         });
     },
-
     callback() {
       // 处理 Google 登录回调的逻辑
     }
   },
-
   data() {
     return {
       GOOGLE_CLIENT_ID: GOOGLE_CLIENT_ID

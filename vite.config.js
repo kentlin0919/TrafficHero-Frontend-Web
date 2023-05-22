@@ -16,7 +16,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 443,
-    // 是否开启 https
+    // 是否開 https
     https: false,
   },
   // 设置反向代理，跨域

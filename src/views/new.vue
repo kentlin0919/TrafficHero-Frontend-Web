@@ -11,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="color">
         <nav class="navbar bg-primary navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid" data-bs-theme="blue">
-    <img src="./assets/logo2.png" alt="Italian Trulli" class="navbar-brand">
+    <img src="../assets/p1.png" alt="Italian Trulli" class="navbar-brand">
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,12 +30,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <li>
           <RouterLink class="nav-link active" aria-current="page" to="/login"> 登錄</RouterLink>
         </li>
-        
       </ul>
-      <!-- <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
     </div>
   </div>
 </nav>

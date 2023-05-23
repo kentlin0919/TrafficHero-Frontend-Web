@@ -15,7 +15,7 @@ export default defineConfig({
   // 配置前端服务地址和端口
   server: {
     host: '0.0.0.0',
-    port: 443,
+    port: 3000,
     // 是否開 https
     https: false,
   },
